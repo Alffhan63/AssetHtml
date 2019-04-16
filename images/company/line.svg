@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="4px" height="301px" viewBox="0 0 4 301" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-dasharray="1,8">
+        <g id="Company" transform="translate(-718.000000, -750.000000)" stroke="#80B4FD" stroke-width="3">
+            <path d="M720,751.5 L720,1051.5" id="Line"></path>
+        </g>
+    </g>
+</svg>

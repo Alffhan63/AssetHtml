@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="#">
+
+    <title>Synchro | Data Synchronization Platform Overview</title>
+
+    <link href="styles/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> 
+    <link href="styles/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"> 
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->    
+  </head>
+
+  <body class="products-synchro-page">
+  
+    <!--==========================================
+                        Header 
+    ===========================================-->
+    <header>  
+		<nav class="navbar navbar-custom">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-custom-collapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-custom-collapse"> 
+						<ul class="nav navbar-nav navbar-right">
+								<!-- <li><a href="#">Products</a></li> -->
+								<li class="dropdown active">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+												<li><a href="data-synchronization-platform.html">Data Synchronization Platform</a></li>
+												<!-- <li><a href="/atm-management-platform.html">ATM Management Platform</a></li> -->
+												<!-- <li><a href="/document-management-platform.html">Document Management Platform</a></li> -->
+												<!-- <li><a href="/integrated-supervision-management-platform.html">Integrated Supervision Management Platform</a></li> -->
+										</ul>
+								</li>
+								<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+												<li><a href="retail.html">Retail</a></li>
+												<li><a href="banking.html">Banking</a></li>
+												<!-- <li><a href="/government.html">Government</a></li> -->
+										</ul>
+								</li>
+								<li><a href="consulting-service.html">Support & Services</a></li> 
+								<!-- <li><a href="#">Partners</a></li>  --> 
+								<li><a href="company.html">Company</a></li> 
+						</ul>
+						</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+    </header>
+ 
+    <!--==========================================
+                        Main
+    ===========================================--> 
+    <main>
+
+	    <!--=============
+	    HERO
+	    ==============--> 
+    	<section class="hero hero-product-inner hero-small">
+    		<div class="container">
+    			<!-- HERO CONTENT  -->
+    			<div class="hero-content">
+                    <ol class="breadcrumb animated hiding" data-animation="fadeInUp" data-delay="100">
+                        <li>
+                            <a href="data-synchronization-platform.html">Data Synchronization Platform</a>
+                        </li>
+                        <li>
+                            Main Component
+                        </li>
+                    </ol>
+    				<div class="hero-slide animated hiding" data-animation="fadeIn">
+    					<div class="slide-item">
+    						<h2>
+                                    Main Component
+    						</h2>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+
+        <!--=============
+        COMPANY
+        ==============-->
+        <section class="section article-section">
+            <div class="container text-justify">
+                <img src="images/products-overview/synchro-main-component.png" class="img-responsive" alt="Synchro Main Component" />
+                <ol>
+                    <li>Ekstrak proses membaca data dari berbagai sumber dengan merapkan teknik parsing dengan besaran data sesuai parameter input dan ditulis pada memory dengan format tertentu.</li>
+                    <li>Transform prosess mengubah keluaran dari proses ekstrak menjadi format yang sudah ditentukan dan ditulis pada storage menjadi temporary data.</li>
+                    <li>Compress Proses memadatkan temporary data menjadi data yang lebih efisien dalam penyimpanan dan mempersingkat waktu transfer data.</li>
+                    <li>Encrypt proses mengamankan hasil keluaran dari proses compress agar data tidak dapat dibaca oleh pihak pihak yang tidak berhak. Synchro menggunakan enkripsi RSA 10244096, artinya adalah Agent melakukan enkripsi dengan menggunakan publickey dari Server yang ada di pusat data.</li>
+                    <li>Send Proses pengiriman data hasil keluaran dari proses encrypt ke tujuan yang sudah ditentukan dengan memaksimalkan jaringan yang tersedia dan mampu melakukan proses suspend jika network terputus dan melakukan resume jika network kembali tersambung.</li>
+                    <li>Receive Proses menerima data dari hasil proses baik yang bersifat normal, suspend dan resume. Send dan Recieve adalah sepasang modul aplikasi yang berkomunikasi sangat intens terkait dengan proses transfer data.</li>
+                    <li>Decrypt Decrypt adalah invers dari proses encrypt, dalam hal ini proses encrypt menggunakan public key dari Server yang ada dipusat data.</li>
+                    <li>Uncompress Proses menyusun kembali data hasil proses compress.</li>
+                    <li>Load Proses menyimpan data secara batch.</li>
+                </ol>
+            </div>
+        </section>
+
+	    <!--=============
+	    POC 
+	    ==============-->
+    	<section class="section article-section">
+    		<div class="container text-justify">
+                <img src="documents/synchro-poc.png" class="img-responsive" alt="Synchro Proof of Concept" />
+                <h3>Kebutuhan PoC</h3>
+                <ol>
+                    <li>Sinkronisasi dari Database ERP-AP-1 (dbase) ke Oracle Data Staging (Kantor Pusat) level record data <i class="fa fa-arrow-right"></i> Proses 1,2,3</li>
+                    <li>Sinkronisasi dari Oracle Data Staging (Kantor Pusat) ke Database ERP-AP-1(dbase) level record data <i class="fa fa-arrow-right"></i> Proses 3,4,5</li>
+                    <li>Sinkronisasi dari Database ERP-AP-1 (dbase) ke Database ERP-AP-2 (dbase) level record data <i class="fa fa-arrow-right"></i> Proses 6</li>
+                </ol>
+    		</div>
+    	</section>
+
+    </main>
+
+    <!--==========================================
+                        Footer
+    ===========================================-->  
+    <footer class="footer">
+    	<div class="container">
+    		<div class="footer-links">
+    			<div class="item">
+    				<h5><a href="#">PRODUCTS</a></h5>
+					<ul>
+						<li><a href="data-synchronization-platform.html">Data Synchronization Platform</a></li>
+						<!-- <li><a href="atm-management-platform.html">ATM Management Platform</a></li> -->
+						<!-- <li><a href="/document-management-plaform.html">Document Management Plaform</a></li> -->
+						<!-- <li><a href="/continous-Audit-management-platform.html">Continous Audit Management Platform</a></li> -->
+						<!-- <li><a href="/data-reconciliation-platform.html">Data Reconciliation Platform</a></li> -->
+					</ul>
+				</div>
+    			<div class="item">
+    				<h5><a href="#">SOLUTIONS</a></h5>
+					<ul>
+						<li><a href="retail.html">Retail</a></li>
+						<li><a href="banking.html">Banking</a></li>
+						<!-- <li><a href="">Government</a></li> -->
+					</ul>
+				</div>
+    			<div class="item">
+    				<h5><a href="#">SUPPORT AND SERVICES</a></h5>
+					<ul>
+						<!-- <li><a href="">Products Support</a></li> -->
+						<li><a href="consulting-service.html">Consulting Service</a></li>
+					</ul>
+				</div>
+    			<!-- <div class="item">
+    				<h5><a href="">PARTNER</a></h5>
+					<ul>
+						<li><a href="">Reseller</a></li>
+						<li><a href="">Consulting Partner</a></li>
+					</ul>
+				</div> -->
+    			<div class="item">
+    				<h5><a href="#">COMPANY</a></h5>
+					<ul>
+						<li><a href="company.html">About Synchro</a></li>
+						<li><a href="contact-us.html">Contact Us</a></li>
+					</ul>
+				</div>
+    		</div>
+    		<div class="footer-copyright">© 2017 Copyright by synchro. All Rights Reserved.</div>
+    	</div>
+    </footer>
+ 
+    
+    <!--==========================================
+                  Javascript core
+    ===========================================-->
+    <script src="js/jquery.min.js"></script>  
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/script.js"></script> 
+  </body>
+
+</html>
